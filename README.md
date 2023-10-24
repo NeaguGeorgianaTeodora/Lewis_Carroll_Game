@@ -19,3 +19,22 @@ Then we can start building the graph: for each key in the map, we take all the w
 Now we can drop the additional map data structure and focus only on the graph.
 The problem of finding the best transformation from the starting word to the target word comes to finding the shortest path between the starting word and the target word in the graph that you created.
 
+This application has the following options:
+##Automatic mode: 
+  - you select the starting word and the target word and the application displays the transformations you need to perform.
+##Playing mode: 
+  - the user is prompted for his/her name;
+  - the user first selects the number of letters for the word, and then the start word and the target word are randomly selected from the appropriate dictionary (based on the number of letters of the word). In       words_alpha.txt you can find a list of all the words from the English dictionary.
+  - the user then plays this game and the application needs to ensure that the user respects the rules: i.e., when transforming a word to another one, a single letter must be changed and the new word should          exist in the dictionary. 
+  - during the game the user can ask for hints by pressing the letter 'h'
+  - when the user is done, the following will be compute and seve to username.csv:
+              - the starting word and the target word;
+              - date and time of the game (use the system date and time to achieve this: https://en.cppreference.com/w/cpp/chrono/system_clock/now 
+              - how many hints did the user use;
+              - which were the words that the user used;
+              - how many moves did the user do to reach from the source word to the target word
+              - what is the optimal number of moves that he could have used
+##Analytics module. 
+    This will compute some statistics about a user’s game.
+    You first type the name of the user, and the application loads the data from the corresponding file (username.csv)
+    Then you should display the number of unique words the user used when playing the game.
