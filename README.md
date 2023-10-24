@@ -35,6 +35,6 @@ This application has the following options:
               - how many moves did the user do to reach from the source word to the target word
               - what is the optimal number of moves that he could have used
 ## Analytics module:
-    This will compute some statistics about a user’s game.
-    You first type the name of the user, and the application loads the data from the corresponding file (username.csv)
-    Then you should display the number of unique words the user used when playing the game.
+  This will compute some statistics about a user’s game.
+  You first type the name of the user, and the application loads the data from the corresponding file (username.csv)
+  Then you should display the number of unique words the user used when playing the game.
