@@ -28,12 +28,12 @@ This application has the following options:
   - the user then plays this game and the application needs to ensure that the user respects the rules: i.e., when transforming a word to another one, a single letter must be changed and the new word should          exist in the dictionary. 
   - during the game the user can ask for hints by pressing the letter 'h'
   - when the user is done, the following will be compute and seve to username.csv:
-              - the starting word and the target word
-              - date and time of the game  
-              - how many hints did the user use
-              - which were the words that the user used
-              - how many moves did the user do to reach from the source word to the target word
-              - what is the optimal number of moves that he could have used
+    - the starting word and the target word
+    - date and time of the game  
+    - how many hints did the user use
+    - which were the words that the user used
+    - how many moves did the user do to reach from the source word to the target word
+    - what is the optimal number of moves that he could have used
 ## Analytics module:
   This will compute some statistics about a user’s game.
   You first type the name of the user, and the application loads the data from the corresponding file (username.csv)
